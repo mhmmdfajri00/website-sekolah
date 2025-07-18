@@ -32,6 +32,46 @@
       font-size: 16px;
       line-height: 1.5;
     }
+
+    .kegiatan-card {
+      margin-bottom: 40px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      padding: 20px;
+    }
+
+    .kegiatan-card h3 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+      font-size: 1.5em;
+    }
+
+    .galeri-foto {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin: 20px 0;
+    }
+
+    .galeri-foto img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .galeri-foto img:hover {
+      transform: scale(1.05);
+    }
+
+    .tanggal {
+      color: #7f8c8d;
+      font-style: italic;
+      margin-top: 15px;
+    }
   </style>
 </head>
 <body>
@@ -73,15 +113,41 @@
           <a href="images/kegiatan/upacara3.jpg" data-lightbox="upacara" data-title="Upacara 3">
             <img src="images/kegiatan/upacara3.jpg" alt="Foto 3">
           </a>
-          <a href="images/kegiatan/upacara4.jpg" data-lightbox="upacara" data-title="Upacara 3">
-            <img src="images/kegiatan/upacara4.jpg" alt="Foto 3">
+          <a href="images/kegiatan/upacara4.jpg" data-lightbox="upacara" data-title="Upacara 4">
+            <img src="images/kegiatan/upacara4.jpg" alt="Foto 4">
           </a>
         </div>
     
         <p class="tanggal">Tanggal: 2 Mei 2025</p>
       </div>
+
+      <div class="kegiatan-card">
+        <h3>Penerimaan Siswa Baru</h3>
+        <p>Kegiatan penerimaan siswa baru tahun ajaran 2025/2026 telah dimulai. Siswa baru diberikan orientasi dan pengenalan lingkungan sekolah.</p>
+    
+        <div class="galeri-foto">
+          <a href="images/kegiatan/psb1.jpg" data-lightbox="psb" data-title="Penerimaan Siswa Baru 1">
+            <img src="images/kegiatan/psb1.jpg" alt="PSB 1">
+          </a>
+          <a href="images/kegiatan/psb2.jpg" data-lightbox="psb" data-title="Penerimaan Siswa Baru 2">
+            <img src="images/kegiatan/psb2.jpg" alt="PSB 2">
+          </a>
+          <a href="images/kegiatan/psb3.jpg" data-lightbox="psb" data-title="Penerimaan Siswa Baru 3">
+            <img src="images/kegiatan/psb3.jpg" alt="PSB 3">
+          </a>
+          <a href="images/kegiatan/psb4.jpg" data-lightbox="psb" data-title="Penerimaan Siswa Baru 4">
+            <img src="images/kegiatan/psb4.jpg" alt="PSB 4">
+          </a>
+        </div>
+    
+        <p class="tanggal">Tanggal: 10 Juli 2025</p>
+      </div>
+
+      </div>
     </section>
     
   </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox.min.js"></script>
 </body>
 </html>
